@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="fourphoto.png">
+    <script src="https://kit.fontawesome.com/3477ae541c.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Programs</title>
+
+    <style>
+
+*{
+  font-family: 'Roboto', sans-serif;}
+
+
+        .navbar {
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.6s;
+padding: 40px 10px;
+z-index: 100000;
+
+ 
+}
+
+  header .logo
+  {
+      position: relative;
+      font-weight: 700;
+      color:gold;
+      text-decoration: none;
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      margin-right: 200px;
+      
+
+  }
+
+  header ul{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      font-size:25px;
+      margin-left: 200px;
+
+
+  }
+  header ul li{
+      position: relative;
+      list-style:none;
+  }
+
+  header ul li a{
+      position: relative;
+      margin:0 15px;
+      text-decoration: none;
+      color: #05386b;
+      letter-spacing: 2px;
+      font-weight:500px;
+      transition:0.6s;
+      
+  }
+
+  * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .accordion{
+    width: 450px;
+    height: 60px;
+    margin: 0 auto;
+    background: #ededed;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(225,225,225,1);
+    overflow: hidden;
+    transition: height 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.accordion .accordion_tab{
+  padding: 20px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.accordion .accordion_tab .accordion_arrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 15px;
+  height: 15px;
+  transition: all 0.3s ease;
+}
+
+.accordion .accordion_tab .accordion_arrow img{
+  width: 100%;
+  height: 100%;
+}
+
+.accordion .accordion_tab.active .accordion_arrow{
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.accordion.active{
+  height: 320px;
+}
+
+.accordion .accordion_content{
+  padding: 20px;
+  border-top: 1px solid #e9e9e9;
+}
+
+.accordion .accordion_content .accordion_item{
+  margin-bottom: 20px;
+}
+
+.accordion .accordion_content .accordion_item p.item_title{
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: gold;
+}
+
+.accordion .accordion_content .accordion_item p:last-child{
+  color: #05386b;;
+  font-size: 14px;
+  line-height: 20px;
+}
+.beginner {
+    margin-left:300px;
+    margin-bottom: 50px; 
+}
+
+.advanced{
+    margin-left:500px;
+    margin-bottom: 50px; 
+}
+
+.programs{
+    display:flex;
+}
+
+
+
+.accord{
+margin-left:200px;
+margin-right:200px;
+display:flex;
+align-items: center;
+justify-content: space-between;
+}
+
+h1{
+  color:#05386b;
+}
+
+.accordion_tab {
+  color: #05386b;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header class = "navbar">
+        <a href = "#" class = "logo">Chessmeister</a>
+        <ul>
+            <li><a href = "homepage.html">Homepage</a></li>
+            <li><a href="aboutschool.html">About School</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="ourcoaches.html">Our Coaches</a></li>
+            <br><br><br><br><br><br>
+            
+        </ul>
+       </header>
+
+       <br><br><br><br><br><br>
+       <section class = "programs">
+       <h1 class = "beginner">
+        Beginner program
+       </h1>
+
+       <h1 class = "advanced">
+        Advanced program
+       </h1>
+    </section>
+
+       <br>
+
+
+       <section class = "accord">
+       <div class="wrapper">
+        <div class="accordion active">
+          <div class="accordion_tab active">
+              Pieces
+              <div class="accordion_arrow">
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+          </div>
+          <div class="accordion_content">
+            <div class="accordion_item">
+              <p class="item_title">Piece move</p>
+              <p>In this section we will explore how pieces move and will solve a lot of practical problems</p>
+            </div>
+            <div class="accordion_item">
+              <p class="item_title">Mates</p>
+              <p>Here we are gonna practice mate with: Queen, Rook</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion_tab">
+             Game stages
+              <div class="accordion_arrow">
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+          </div>
+          <div class="accordion_content">
+            <div class="accordion_item">
+              <p class="item_title">Endgame</p>
+              <p>First of all we start at endgame because in this stage of game most of pieces dies and it is easier to understand the fundamentals</p>
+            </div>
+            <div class="accordion_item">
+              <p class="item_title">Middlegame</p>
+              <p>Then we are about to explore middlegame where we are gonna get the solid understanding of strategy and planning.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion_tab">
+              Basic Tactics
+              <div class="accordion_arrow">
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+          </div>
+          <div class="accordion_content">
+            <div class="accordion_item">
+              <p class="item_title">Double attack</p>
+              <p>It is one of the most common tactical attacks in chess. The idea is to attack 2 pieces at the same time. We are gonna solve 150 problems with it</p>
+            </div>
+            <div class="accordion_item">
+              <p class="item_title">Pin</p>
+              <p>The idea of a pin is to attack piece right behind the other so that the piece can't move away. 200 problems</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="wrapper">
+        <div class="accordion active">
+          <div class="accordion_tab active">
+              Advanced Mates
+              <div class="accordion_arrow">
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+          </div>
+          <div class="accordion_content">
+            <div class="accordion_item">
+              <p class="item_title">2bishop,bishop+knignt mates</p>
+              <p>Sometimes it is pretty complicated to get a plan how to checkmate opponent with those pieces. Now we gonna get it.</p>
+            </div>
+            <div class="accordion_item">
+              <p class="item_title">Mate with king and single pawn</p>
+              <p>Sometime it happens when you left only with 1 pawn and king agains single opponent's king. We will show what to do in this situation</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion_tab">
+              Advanced Positional Gaming
+              <div class="accordion_arrow">
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+          </div>
+          <div class="accordion_content">
+            <div class="accordion_item">
+              <p class="item_title">VPO</p>
+              <p>We will show some essential of positional gaming to not let your pieces be captured and have a good position every time</p>
+            </div>
+            <div class="accordion_item">
+              <p class="item_title">Pawn Structure/p>
+              <p>Pawn structure is the important part of game that really matters in endgame. You should pretty accurate with choices about what to do with your pawns</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion_tab">
+              Game Analysis
+              <div class="accordion_arrow">
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+          </div>
+          <div class="accordion_content">
+            <div class="accordion_item">
+              <p class="item_title">AI</p>
+              <p>In 2023 it's ok to use AI to help yourself in studying chess because this technology is much better at calculating moves. We will show how to use it</p>
+            </div>
+            <div class="accordion_item">
+              <p class="item_title">Self analysis</p>
+              <p>AI is ok. But it only shows us the moves at the end. But we gotta learn ourself how to think in the game and self-analysis help us with it</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+        $(".accordion_tab").click(function(){
+    $(".accordion_tab").each(function(){
+      $(this).parent().removeClass("active");
+      $(this).removeClass("active");
+    });
+    $(this).parent().addClass("active");
+    $(this).addClass("active");
+});
+      </script>
+</body>
+</html>

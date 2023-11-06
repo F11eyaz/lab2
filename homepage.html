@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="icon" type="image/x-icon" href="fourphoto.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        
+         @import url('https://fonts.google.com/specimen/Kanit?query=kanit');
+
+         body{
+            background-color: #ededed;
+            color:#05386b;
+
+
+            
+         }
+
+*{
+ 
+font-family: 'Roboto', sans-serif;
+
+}
+.navbar {
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.6s;
+padding: 40px 10px;
+z-index: 100000;
+
+ 
+}
+
+  header .logo
+  {
+      position: relative;
+      font-weight: 700;
+      color:gold;
+      text-decoration: none;
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      margin-right: 200px;
+      
+
+  }
+
+  header ul{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      font-size:25px;
+      margin-left: 200px;
+
+
+  }
+  header ul li{
+      position: relative;
+      list-style:none;
+  }
+
+  header ul li a{
+      position: relative;
+      margin:0 15px;
+      text-decoration: none;
+      color: #05386b;
+      letter-spacing: 2px;
+      font-weight:500px;
+      transition:0.6s;
+      
+  }
+
+  * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+  
+      .hpblocks {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+}
+
+.block1,
+.block2,
+.block3,
+.block4 {
+    width: 48%; 
+    text-align: center; 
+}
+
+img{
+    width:300px;
+    height:300px;;
+}
+
+  h3{
+    
+    line-height: 1.5;
+    font-weight: normal;
+    font-size: 20px;
+    
+    
+}
+
+.inputAnimate {
+    --offsetLeft: 0;
+    --offsetLeftScale: 16px;
+    padding: 16px;
+    min-width: 220px;
+    position: relative;
+}
+.inputAnimate input,
+.inputAnimate span {
+    display: block;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 22px;
+    padding: 0 0 0 3px;
+    color: transparent;
+    text-shadow: 0 0 0 gold;
+}
+.inputAnimate input {
+    background: none;
+    outline: none;
+    border: 0;
+    position: relative;
+    z-index: 1;
+    transition: text-shadow .3s ease;
+    color: #333;
+}
+.inputAnimate input::placeholder {
+   
+    opacity: .5;
+}
+.inputAnimate input + div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    border-radius: 6px;
+    transition: transform .4s ease, left .4s ease, border-radius .5s ease;
+    transform-origin: 0 50%;
+}
+.inputAnimate input + div + em {
+    opacity: 0;
+    left: 16px;
+    width: 1px;
+    height: 24px;
+    top: 50%;
+    margin: -12px 0 0 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    background: #fff;
+    transform: translateX(var(--offsetLeft));
+}
+.inputAnimate input:not(:focus) {
+    width: 100% !important;
+}
+.inputAnimate input:focus {
+    text-shadow: 0 0 0 #fff;
+}
+.inputAnimate input:focus + div {
+    border-radius: 0;
+    left: var(--offsetLeftScale);
+    transform: scale(0, .45);
+}
+.inputAnimate input:focus + div + em {
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    30%, 70% {
+        opacity: 1;
+    }
+}
+
+.contact{
+    min-height: 50vh;
+    font-family: Roboto, Arial;
+    color: #121215;
+    background: ededed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+    </style>
+</head>
+<body>
+    <header class = "navbar">
+        <a href = "#" class = "logo">Chessmeister</a>
+        <ul>
+            <li><a href = "homepage.html">Homepage</a></li>
+            <li><a href="aboutschool.html">About School</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="ourcoaches.html">Our Coaches</a></li>
+            <br><br><br><br><br><br>
+            
+        </ul>
+       </header>
+
+       <br><br><br><br><br><br>
+       
+
+
+       <div class="hpblocks" >
+        <div class="block1" data-aos = "zoom-in">
+            <img src="onephoto.png">
+            <h1 data-aos = "flip-down">Programs For Everyone</h1>
+            <h3>In our school we can offer <br> beginner and advanced level programs</h3>
+        </div>
+    
+        <div class="block2">
+            <img src="twophoto.png">
+            <h1>Game Analysis</h1>
+            <h3>
+Work on your weaknesses <br>
+with our proffesional coaches<br>
+by analyzing your past 
+games together               
+            </h3>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="hpblocks">
+        <div class="block3">
+            <img src="fourphoto.png">
+            <h1>Practical Puzzles</h1>
+            <h3>In our school we give only puzzles<br> from positions that can be met in real games<br>
+                that will help you to understand and memorize<br> real patterns and use them immediately in real games
+            </h3>
+        </div>
+    
+        <div class="block4">
+            <img src="fivephoto.png">
+            <h1>Theoretical Foundation</h1>
+            <h3>You will know all actual openings, middlegame <br> and endgame strategies.<br>  A solid theoretical foundation
+                will navigate <br> you in every critical situation in your games
+            </h3>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+
+    <section class = "allofcontact">
+    
+        
+
+        
+    <section class = "contact">
+
+        
+        
+
+    <div class="inputAnimate">
+        <input type="text" placeholder="Your name">
+    </div>
+    <div class="inputAnimate">
+        <input type="text" placeholder="Your phone number">
+    </div>
+    <div class="inputAnimate">
+        <input type="text" placeholder="your Email adress">
+    </div>
+    
+    <button id = "play" type="button" class="btn btn-warning">Submit</button>
+    
+    
+  
+    
+
+</section>
+</section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   
+    <script>
+
+    
+
+
+        $(document).ready(function() {
+
+$('.inputAnimate').each(function() {
+
+    var self = $(this);
+    var input = self.children('input');
+    var span = $('<span />').prependTo(self);
+    var div = $('<div />').appendTo(self);
+    var em = $('<em />').appendTo(self);
+
+    input.keypress(function (e) {
+        if(e.which && e.charCode) {
+            resizeForText(self, span, $(this).val() + String.fromCharCode(e.keyCode | e.charCode));
+        }
+    });
+
+    input.keyup(function(e) {
+        if(e.keyCode === 8 || e.keyCode === 46) {
+            resizeForText(self, span, $(this).val());
+        }
+    });
+
+    resizeForText(self, span, input.val());
+
+});
+
+});
+
+function resizeForText(self, span, text) {
+text = (!text) ? ' ' : text;
+span.text(text);
+self.css('--offsetLeft', span.width() + 3);
+self.css('--offsetLeftScale', span.width() + 19);
+}
+
+
+let play = document.getElementById("play");
+function playSound(){
+    let audio = new Audio("audio.mp3");
+    audio.play();
+}
+play.addEventListener("click", playSound);
+
+
+   
+    
+
+
+    </script>
+
+
+</body>
+</html>
